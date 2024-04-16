@@ -16,6 +16,7 @@ on:
   push:
     branches:
     - main
+    - temp-fw
     - 'release-*'
     - 'citest/**'
     tags:
@@ -1856,6 +1857,7 @@ jobs:
       - test-components
       - build-ig-cwe
       - test-ig
+      - test-gadgets
       - test-integration-k8s-ig
       - test-integration-non-k8s-ig
       - build-examples
